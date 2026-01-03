@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VANTA — Private Performance Society</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#">VANTA</a>
+
+      <button class="menu-btn" id="openMenu" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU (OVERLAY) -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu-top">
+      <div class="brand-outline">VANTA</div>
+      <button class="menu-close" id="closeMenu" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="menu-actions">
+      <a class="btn outline" href="#visit">Visit Us</a>
+      <a class="btn outline" href="#join">Join Us</a>
+      <a class="btn outline wide" href="#login">Log In / Register</a>
+    </div>
+
+    <div class="menu-section">
+      <button class="accordion" data-target="locList">
+        Locations <span class="chev">⌄</span>
+      </button>
+      <div class="panel" id="locList">
+        <a href="#" class="menu-link">VANTA — Downtown</a>
+        <a href="#" class="menu-link">VANTA — West</a>
+        <a href="#" class="menu-link">VANTA — Waterfront</a>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <button class="accordion" data-target="classList">
+        Classes <span class="chev">⌄</span>
+      </button>
+      <div class="panel" id="classList">
+        <a href="#" class="menu-link">Class Formats</a>
+        <a href="#" class="menu-link">Schedule</a>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <button class="accordion" data-target="trainList">
+        Training <span class="chev">⌄</span>
+      </button>
+      <div class="panel" id="trainList">
+        <a href="#" class="menu-link">Personal Training</a>
+        <a href="#" class="menu-link">Programming</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner container">
+      <h1 class="hero-title">A Private Performance & Wellness Society</h1>
+      <p class="hero-sub">
+        Invitation-only training, recovery, and structure — designed for focus, privacy, and measurable results.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn outline" href="#visit">Visit Us</a>
+        <a class="btn outline" href="#join">Join Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="section container" id="amenities">
+    <h2 class="section-title">Amenities</h2>
+
+    <article class="amenity">
+      <div class="pill">Functional Training Zone</div>
+      <div class="media">
+        <div class="media-overlay"></div>
+        <div class="media-text">See More</div>
+      </div>
+    </article>
+
+    <article class="amenity">
+      <div class="pill">Smart Cardio Equipment</div>
+      <div class="media">
+        <div class="media-overlay"></div>
+        <div class="media-text">See More</div>
+      </div>
+    </article>
+
+    <article class="amenity">
+      <div class="pill">Locker Room & Recovery</div>
+      <div class="media">
+        <div class="media-overlay"></div>
+        <div class="media-text">See More</div>
+      </div>
+    </article>
+  </section>
+
+  <!-- MEMBERSHIPS -->
+  <section class="section container" id="memberships">
+    <h2 class="section-title">Memberships</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Core</h3>
+        <p class="muted">Access to one location. Training floor + recovery basics.</p>
+        <ul>
+          <li>Strength floor access</li>
+          <li>Class booking (3 days)</li>
+          <li>Locker room</li>
+        </ul>
+        <div class="price">$149</div>
+        <a class="btn fill" href="#join">Join Now</a>
+      </div>
+
+      <div class="card">
+        <h3>Elite</h3>
+        <p class="muted">All locations. Priority booking + expanded recovery.</p>
+        <ul>
+          <li>All locations</li>
+          <li>Class booking (7 days)</li>
+          <li>Recovery lounge</li>
+        </ul>
+        <div class="price">$219</div>
+        <a class="btn fill" href="#join">Join Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT FORM -->
+  <section class="section container" id="visit">
+    <h2 class="section-title">Visit Us</h2>
+    <p class="muted max">
+      Schedule a complimentary tour by filling out the form below. Reservations are required and subject to availability.
+    </p>
+
+    <form class="form">
+      <select class="select">
+        <option>Please select a club</option>
+        <option>VANTA — Downtown</option>
+        <option>VANTA — West</option>
+        <option>VANTA — Waterfront</option>
+      </select>
+
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" placeholder="" />
+      </div>
+
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" placeholder="" />
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="" />
+      </div>
+
+      <div class="field">
+        <label>Phone</label>
+        <input type="tel" placeholder="" />
+      </div>
+
+      <button class="btn fill" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- JOIN -->
+  <section class="section container" id="join">
+    <h2 class="section-title">Join Us</h2>
+    <p class="muted max">Membership is limited. Request an invitation to begin.</p>
+    <a class="btn outline" href="#visit">Request Invitation</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand-outline small">VANTA</div>
+      <div class="footer-links">
+        <a href="#">Gym & Membership Policies</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
